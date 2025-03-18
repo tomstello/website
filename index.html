@@ -5,25 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Thomas Costello | Academic Atelier</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=EB+Garamond&display=swap">
-    <style>
+       <style>
         body {
             font-family: 'Roboto Mono', monospace;
             background: radial-gradient(circle at top left, #fef9f0, #f0e6d6);
             color: #1c1c1c;
-            margin: 0; padding: 0;
+            margin: 0;
+            padding: 0;
             min-height: 100vh;
-            display: flex; flex-direction: column;
+            display: flex;
+            flex-direction: column;
         }
-        header, footer { padding: 1rem; text-align: center; }
-        nav { display: flex; justify-content: center; gap: 1.5rem; padding: 0.5rem; }
-        nav a { text-decoration: none; color: #333; transition: color 0.3s, transform 0.3s; }
-        nav a:hover { transform: rotate(-3deg); color: #d72631; }
-        main { flex: 1; padding: 2rem; max-width: 900px; margin: auto; }
-        h1, h2, h3 { font-family: 'EB Garamond', serif; color: #d72631; }
-        .highlight { background-color: #f4e285; color: #333; padding: 0 0.3rem; }
-        .card { background: rgba(255,255,255,0.8); padding: 1rem; margin: 1rem 0; border: 2px dashed #d72631; box-shadow: 5px 5px 0 rgba(0,0,0,0.1); }
-        footer { text-align: center; padding: 1rem; font-size: 0.8rem; border-top: 2px dashed #aaa; }
-</style>
+        header {
+            background-color: transparent;
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 2px dashed #aaa;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 0.5rem;
+            background-color: rgba(255,255,255,0.5);
+            border-bottom: 1px dashed #aaa;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            transform: rotate(-3deg);
+            color: #d72631;
+        }
+        main {
+            flex: 1;
+            padding: 3rem;
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2, h3 {
+            font-family: 'EB Garamond', serif;
+            color: #d72631;
+        }
+        .highlight {
+            background-color: #f4e285;
+            color: #333;
+            padding: 0 0.3rem;
+        }
+        .card {
+            background: rgba(255,255,255,0.8);
+            padding: 1rem;
+            margin: 1rem 0;
+            border: 2px dashed #d72631;
+            box-shadow: 5px 5px 0 rgba(0,0,0,0.1);
+            transition: box-shadow 0.3s;
+        }
+        .card:hover {
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.8rem;
+            border-top: 2px dashed #aaa;
+        }
+    </style>
 </head>
 <body>
     <header>
